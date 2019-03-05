@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".WeightActivity"
+    tools:showIn="@layout/activity_weight">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#000000">
+
+            <TextView
+                android:id="@+id/lblEnterWeight"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="ENTER YOUR WEIGHT IN FIELD BELOW"
+                android:textAlignment="center"
+                android:textColor="#FF0008"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <EditText
+                android:id="@+id/txtWeight"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#B8B8C0"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnExcute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:onClick="Excute"
+                android:text="Calculate Weight"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/div1"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lblmercuryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="MERCURY"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+
+            <ImageView
+
+                android:id="@+id/imgmercury"
+                android:layout_width="196dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/mercury" />
+            <!--tools:srcCompat="@drawable/mercury"-->
+
+            <TextView
+                android:id="@+id/lblmercury"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div3"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lblvenusTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="VENUS"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+
+                android:id="@+id/imgvenus"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/venus" />
+            <TextView
+                android:id="@+id/lblvenus"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div5"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lblmoonTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="MOON"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+
+                android:id="@+id/imgmoon"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/moon" />
+            <TextView
+                android:id="@+id/lblmoon"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div6"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div7"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lblmarsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="MARS"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+
+                android:id="@+id/imgmars"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/mars" />
+            <TextView
+                android:id="@+id/lblmars"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div8"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div9"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lbljupiterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="JUPITER"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+
+                android:id="@+id/imgjupiter"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/jupiter" />
+            <TextView
+                android:id="@+id/lbljupiter"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div10"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div11"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lblsaturnTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="SATURN"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+
+                android:id="@+id/imgsaturn"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/saturn" />
+            <TextView
+                android:id="@+id/lblsaturn"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div12"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div13"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lbluranusTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="URANUS"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+
+                android:id="@+id/imguranus"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/uranus" />
+            <TextView
+                android:id="@+id/lbluranus"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div14"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div15"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lblneptuneTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="NEPTUNE"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+                android:id="@+id/imgneptune"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/neptune" />
+            <TextView
+                android:id="@+id/lblneptune"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div16"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+            <View
+                android:id="@+id/div17"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#272F3C" />
+            <TextView
+                android:id="@+id/lblplutoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="PLUTO"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <ImageView
+                android:id="@+id/imgpluto"
+                android:layout_width="196dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:src="@drawable/pluto" />
+            <TextView
+                android:id="@+id/lblpluto"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#101647"/>
+            <View
+                android:id="@+id/div18"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#272F3C" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

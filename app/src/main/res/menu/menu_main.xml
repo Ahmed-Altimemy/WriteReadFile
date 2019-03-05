@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.amd.writereadfile.LoginActivity">
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_Weight"
+        android:orderInCategory="100"
+        android:title="@string/menu_Weight"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_age"
+        android:orderInCategory="100"
+        android:title="@string/menu_age"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="100"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_BackToMain"
+        android:orderInCategory="100"
+        android:title="@string/menu_BackToMain"
+        app:showAsAction="never" />
+</menu>
